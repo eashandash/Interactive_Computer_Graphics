@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+The content contains the lab assignments for Interactive Computer Graphics - Eashan Dash ( Ced15i043 ) ! 
+
+
+
+	 <canvas id="myCanvas" width="1400" height="1450" style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+
+ctx.beginPath();
+ctx.lineWidth = "2";
+ctx.strokeStyle = "#DAA520";
+ctx.rect(410, 410, 100, 140);  
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.lineWidth = "2";
+ctx.strokeStyle = "#813F0B";
+ctx.rect(420, 420, 80, 120);
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.lineWidth = "2";
+ctx.strokeStyle = "#7851A9";
+ctx.rect(430, 430, 60, 100);
+ctx.stroke();
+
+
+
+ var radius = 110;
+
+ctx.beginPath();
+ctx.arc(75, 75, 50, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#F9A602';
+ctx.fill();
+ctx.lineWidth = 5;
+ctx.strokeStyle = '#003300';
+ctx.moveTo(110,75);
+ctx.arc(75, 75, 35, 0, Math.PI, false);
+ctx.moveTo(65, 65);
+ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  
+ctx.moveTo(95, 65);
+ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  
+ctx.stroke();
+
+
+
+
+
+ctx.globalCompositeOperation = 'multiply';
+
+
+ctx.fillStyle = 'yellow';
+ctx.beginPath();
+ctx.rect(180, 90, 200, 200); 
+ctx.globalAlpha = 0.8;
+ctx.closePath();
+ctx.fill();
+
+
+ctx.fillStyle = '#509900';
+ctx.beginPath();
+ctx.rect(255, 135, 200, 200);
+ctx.closePath();
+ctx.fill();
+
+
+ctx.fillStyle = '#E90000';
+ctx.beginPath();
+ctx.rect(150, 160, 200, 200); 
+ctx.closePath();
+ctx.fill();
+
+
+
+  	
+ var centerX = c.width / 2;
+var centerY = c.height / 2;
+var radius = 30;
+
+ctx.beginPath();
+ctx.arc(740, 40, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#9006500';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(780, 80, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#A80440';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(720, 120, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#700000';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(760, 160, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#206400';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(800, 200, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#880000';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(840, 240, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#990000';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(890, 280, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = 'red';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(720, 280, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = 'blue';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(790, 280, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = '#206488';
+ctx.fill();
+
+
+</script> 
+
+
+</body>
+</html>
